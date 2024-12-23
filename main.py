@@ -3,13 +3,13 @@ from paddle import Paddle
 
 
 screen = Screen()
-screen.setup(800, 600)
 screen.bgcolor("black")
+screen.setup(800, 600)
 screen.title("Pong game")
 screen.tracer(0) #turn off animation
 
-r_paddle = Paddle((350,0))
-l_paddle = Paddle((-350,0))
+r_paddle = Paddle((350, 0))
+l_paddle = Paddle((-350, 0))
 game_is_on = True
 
 screen.listen()
